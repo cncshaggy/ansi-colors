@@ -145,9 +145,9 @@ interface StylesType<T> {
   bgWhiteBright: T;
 }
 
-declare namespace ansiColors {
+declare namespace ansiColors {  
   interface StyleFunction extends StylesType<StyleFunction> {
-    (s: string): string;
+    (s: string | numebr): string;
   }
 
   // modifiers
